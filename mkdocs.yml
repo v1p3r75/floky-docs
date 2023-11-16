@@ -1,0 +1,14 @@
+site_name: Floky - Documentation
+site_url: https://example.com/
+nav:
+
+  - Home: index.md
+  - fr :
+    - Get Started : fr/index.md
+
+theme:
+  name: material
+  highlightjs: true
+  hljs_languages:
+    - bash
+    - php
