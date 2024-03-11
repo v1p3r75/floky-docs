@@ -15,6 +15,7 @@ nav:
     - Installation: get-started/index.md
     - Configuration: get-started/configuration.md
     - Contributing: get-started/contributing.md
+  - Controllers: controllers.md
 
 theme:
   # logo: assets/favicon.png
