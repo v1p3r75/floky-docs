@@ -1,11 +1,82 @@
 site_name: Floky
 site_url: https://example.com/
-nav:
+site_author: Fortunatus KIDJE (v1p3r75)
+site_description: >-
+  Floky is a MVC (Model-View-Controller) framework for developing web applications in PHP. It provides an organized structure for your code, powerful features, and flexibility to create robust and scalable web applications. 
+site_dir: build
 
-  - Get Started : index.md
+repo_name: Floky
+repo_url: https://github.com/v1p3r75/Floky
+
+
+nav:
+  - Get Started:
+    - get-started/index.md
+    - Installation: get-started/index.md
+    - Configuration: get-started/configuration.md
+    - Contributing: get-started/contributing.md
 
 theme:
+  # logo: assets/favicon.png
+  # favicon: assets/favicon.png
   name: material
-  highlightjs: true
-  hljs_languages:
-    -php
+  features:
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.expand
+    - navigation.footer
+    - content.code.copy
+    - content.code.select
+
+    - search.highlight
+    - search.share
+    - search.suggest
+
+  palette:
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+
+markdown_extensions:
+  - pymdownx.highlight:
+      use_pygments: true
+      linenums: true
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      auto_title: true
+  - pymdownx.superfences 
+
+
+copyright: Copyright &copy; 2024 - Floky
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/v1p3r75/
+
+    - icon: fontawesome/brands/linkedin 
+      link: https://www.linkedin.com/in/fortunatus-ek/
+
+    - icon: fontawesome/brands/x-twitter  
+      link: https://twitter.com/elfriedv16
