@@ -2,27 +2,127 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://example.com/</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-03-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/controllers/</loc>
-         <lastmod>2024-03-11</lastmod>
+         <loc>https://example.com/cli/add-new-commands/</loc>
+         <lastmod>2024-03-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/cli/cli-commands/</loc>
+         <lastmod>2024-03-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/database/entities/</loc>
+         <lastmod>2024-03-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/database/migrations/</loc>
+         <lastmod>2024-03-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/database/models/</loc>
+         <lastmod>2024-03-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/database/seeders/</loc>
+         <lastmod>2024-03-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/get-started/</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-03-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/get-started/configuration/</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-03-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/get-started/contributing/</loc>
-         <lastmod>2024-03-11</lastmod>
+         <loc>https://example.com/get-started/your-first-app/</loc>
+         <lastmod>2024-03-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/http/controllers/</loc>
+         <lastmod>2024-03-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/http/custom_request/</loc>
+         <lastmod>2024-03-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/http/middleware/</loc>
+         <lastmod>2024-03-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/http/requests/</loc>
+         <lastmod>2024-03-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/http/resources/</loc>
+         <lastmod>2024-03-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/http/response/</loc>
+         <lastmod>2024-03-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/http/routing/</loc>
+         <lastmod>2024-03-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/http/views/</loc>
+         <lastmod>2024-03-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/others/collections/</loc>
+         <lastmod>2024-03-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/others/contributing/</loc>
+         <lastmod>2024-03-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/others/exceptions/</loc>
+         <lastmod>2024-03-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/others/facades/</loc>
+         <lastmod>2024-03-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/others/helpers/</loc>
+         <lastmod>2024-03-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/others/services/</loc>
+         <lastmod>2024-03-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/others/testing/</loc>
+         <lastmod>2024-03-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

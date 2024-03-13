@@ -12,26 +12,28 @@
         <meta name="author" content="Fortunatus KIDJE (v1p3r75)">
       
       
-        <link rel="canonical" href="https://example.com/controllers/">
+        <link rel="canonical" href="https://example.com/http/views/">
       
       
-        <link rel="prev" href="../get-started/contributing/">
+        <link rel="prev" href="../requests/">
       
       
+        <link rel="next" href="../custom_request/">
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      
+      <link rel="icon" href="../../_assets/favicon.ico">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
     
     
       
-        <title>Controllers - Floky</title>
+        <title>Views - Floky</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.4b4a2bd9.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4b4a2bd9.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -50,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -79,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#controllers" class="md-skip">
+        <a href="#view" class="md-skip">
           Skip to content
         </a>
       
@@ -95,10 +97,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Floky" class="md-header__button md-logo" aria-label="Floky" data-md-component="logo">
+    <a href="../.." title="Floky" class="md-header__button md-logo" aria-label="Floky" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="../../_assets/favicon.ico" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -115,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Controllers
+              Views
             
           </span>
         </div>
@@ -242,10 +243,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Floky" class="md-nav__button md-logo" aria-label="Floky" data-md-component="logo">
+    <a href="../.." title="Floky" class="md-nav__button md-logo" aria-label="Floky" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="../../_assets/favicon.ico" alt="logo">
 
     </a>
     Floky
@@ -301,7 +301,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../get-started/" class="md-nav__link ">
+            <a href="../../get-started/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -333,7 +333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../get-started/" class="md-nav__link">
+      <a href="../../get-started/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -353,7 +353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../get-started/configuration/" class="md-nav__link">
+      <a href="../../get-started/configuration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -373,11 +373,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../get-started/contributing/" class="md-nav__link">
+      <a href="../../get-started/your-first-app/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Contributing
+    Your First  App
   </span>
   
 
@@ -401,26 +401,62 @@
     
   
   
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
+    
+    
       
         
       
+        
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
           
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
-    Controllers
+    Http
   </span>
   
 
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Http
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../controllers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -429,54 +465,523 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+    </li>
   
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../routing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Routing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../requests/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
   
   
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <li class="md-nav__item md-nav__item--active">
       
-        <li class="md-nav__item">
-  <a href="#creating-controllers" class="md-nav__link">
-    Creating Controllers
-  </a>
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#anatomy-of-a-controller" class="md-nav__link">
-    Anatomy of a Controller
-  </a>
+  <span class="md-ellipsis">
+    Views
+  </span>
   
-</li>
+
+      </a>
       
-        <li class="md-nav__item">
-  <a href="#example-controller" class="md-nav__link">
-    Example Controller
-  </a>
+    </li>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-points" class="md-nav__link">
-    Key Points
-  </a>
+
+              
+            
+              
+                
   
-</li>
-      
-    </ul>
   
-</nav>
+  
+    <li class="md-nav__item">
+      <a href="../custom_request/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Request
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../response/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Response
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../middleware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Middleware
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Database
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Database
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../database/entities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../database/migrations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Migrations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../database/models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../database/seeders/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Seeders
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../others/services/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../others/collections/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Collections
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../others/facades/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Facades
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../others/helpers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Helpers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    CLI
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            CLI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cli/cli-commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Commands
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cli/add-new-commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Add commands
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../others/exceptions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exceptions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../others/testing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../others/contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -501,42 +1006,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#creating-controllers" class="md-nav__link">
-    Creating Controllers
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#anatomy-of-a-controller" class="md-nav__link">
-    Anatomy of a Controller
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-controller" class="md-nav__link">
-    Example Controller
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-points" class="md-nav__link">
-    Key Points
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -553,95 +1022,7 @@
   
 
 
-<h1 id="controllers">Controllers</h1>
-<p>Controllers are a fundamental part of the Floky MVC architecture. They handle incoming HTTP requests, interact with models to retrieve or manipulate data, and prepare the data for presentation in views. Controllers provide a layer of abstraction between the routes and the underlying application logic.</p>
-<h2 id="creating-controllers">Creating Controllers</h2>
-<p>Floky provides a convenient Artisan command for quickly creating controllers: php floky make:controller. This command generates a PHP controller file within the <code>app/Http/Controllers</code> directory.</p>
-<p>Example:</p>
-<div class="language-bash highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Create a new controller</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a>php<span class="w"> </span>floky<span class="w"> </span>make:controller<span class="w"> </span>WelcomeController
-</span></code></pre></div></td></tr></table></div>
-<p>This command will create a WelcomeController.php file inside the <code>app/Http/Controllers</code> directory. The generated file will contain the following boilerplate code:</p>
-<div class="language-php highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">PHP</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-1-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="cp">&lt;?php</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="k">namespace</span> <span class="nx">App\Http\Controllers</span><span class="p">;</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="k">use</span> <span class="nx">Floky\Http\Controllers\Controller</span><span class="p">;</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="k">class</span> <span class="nc">WelcomeController</span> <span class="k">extends</span> <span class="nx">Controller</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="p">{</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a>    <span class="c1">// ...</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="p">}</span>
-</span></code></pre></div></td></tr></table></div>
-<h2 id="anatomy-of-a-controller">Anatomy of a Controller</h2>
-<p>A typical Floky controller consists of the following elements:</p>
-<ul>
-<li><strong>Namespace:</strong> Controllers are typically placed within a namespace that reflects their location within the application. In the example provided, the controller resides in the <code>App\Http\Controllers</code> namespace.</li>
-<li><strong>Inheritance:</strong> Floky controllers inherit from the <code>Floky\Http\Controllers\Controller</code> class. This base class provides essential functionalities common to all controllers in your application.</li>
-<li><strong>Request Handling Methods:</strong> Controllers define methods to handle different HTTP request types (GET, POST, PUT, etc.). These methods are decorated with the <code>#[Get]</code>, <code>#[Post]</code>, <code>#[Put]</code>, or <code>#[Delete]</code> attributes from the <code>Floky\Routing\Attributes</code> namespace. These attributes specify the HTTP method the method handles and allow you to define the route URL and any middleware to be applied before the method execution.</li>
-<li><strong>Dependency Injection:</strong> Controller methods can accept arguments through constructor injection or method injection. A common approach is to inject the <code>Floky\Http\Requests\Request</code> object to access request data.</li>
-<li><strong>Model Interaction:</strong> Controllers often interact with models to retrieve or manipulate data. Models represent the data layer of your application and encapsulate the business logic.</li>
-<li><strong>View Rendering:</strong> Once the controller has processed the request and prepared the data, it returns a view. The view typically represents the user interface (UI) component responsible for presenting the data to the user. The controller uses the <code>view</code> function provided by Floky to render the desired view and pass any necessary data to it.</li>
-</ul>
-<h2 id="example-controller">Example Controller</h2>
-<div class="language-php highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">PHP</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-2-10">10</a></span>
-<span class="normal"><a href="#__codelineno-2-11">11</a></span>
-<span class="normal"><a href="#__codelineno-2-12">12</a></span>
-<span class="normal"><a href="#__codelineno-2-13">13</a></span>
-<span class="normal"><a href="#__codelineno-2-14">14</a></span>
-<span class="normal"><a href="#__codelineno-2-15">15</a></span>
-<span class="normal"><a href="#__codelineno-2-16">16</a></span>
-<span class="normal"><a href="#__codelineno-2-17">17</a></span>
-<span class="normal"><a href="#__codelineno-2-18">18</a></span>
-<span class="normal"><a href="#__codelineno-2-19">19</a></span>
-<span class="normal"><a href="#__codelineno-2-20">20</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="cp">&lt;?php</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="k">namespace</span> <span class="nx">App\Http\Controllers</span><span class="p">;</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="k">use</span> <span class="nx">Floky\Http\Controllers\Controller</span><span class="p">;</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="k">use</span> <span class="nx">Floky\Http\Requests\Request</span><span class="p">;</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="k">use</span> <span class="nx">Floky\Routing\Attributes\Get</span><span class="p">;</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="k">class</span> <span class="nc">WelcomeController</span> <span class="k">extends</span> <span class="nx">Controller</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="p">{</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11"></a>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12"></a>    <span class="p">#[</span><span class="nd">Get</span><span class="p">(</span><span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;/welcome&#39;</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;welcome&#39;</span><span class="p">,</span> <span class="nx">middlewares</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;first&#39;</span><span class="p">])]</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13"></a>    <span class="k">public</span> <span class="k">function</span> <span class="nf">index</span><span class="p">(</span><span class="nx">Request</span> <span class="nv">$request</span><span class="p">)</span> <span class="p">{</span>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14"></a>
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15"></a>        <span class="c1">// Simulate some data fetching</span>
-</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16"></a>        <span class="nv">$data</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;message&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Welcome to Floky!&#39;</span><span class="p">];</span>
-</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17"></a>
-</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18"></a>        <span class="k">return</span> <span class="nx">view</span><span class="p">(</span><span class="s1">&#39;welcome&#39;</span><span class="p">,</span> <span class="nv">$data</span><span class="p">);</span>
-</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19"></a>    <span class="p">}</span>
-</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20"></a><span class="p">}</span>
-</span></code></pre></div></td></tr></table></div>
-<p>In this example, the <code>WelcomeController</code> has an <code>index</code> method decorated with the <code>#[Get]</code> attribute. This method handles GET requests to the <code>/welcome</code> route. The <code>middlewares</code> option specifies that the <code>first</code> middleware should be executed before the controller method. The <code>index</code> method receives a <code>Request</code> object as an argument, allowing it to access request data. Here, the controller simulates fetching some data and then returns the <code>welcome</code> view, passing the <code>$data</code> array containing the welcome message.</p>
-<h2 id="key-points">Key Points</h2>
-<ul>
-<li>Controllers are responsible for handling HTTP requests, interacting with models, and preparing data for views.</li>
-<li>Floky controllers inherit from the <code>Floky\Http\Controllers\Controller</code> class.</li>
-<li>Request handling methods are decorated with routing attributes to define the HTTP method and route URL.</li>
-<li>Controllers can leverage dependency injection to access request data and other dependencies.</li>
-<li>Controllers interact with models to manage application data.</li>
-<li>Controllers return views to render the UI based on processed data.</li>
-</ul>
+<h1 id="view">View</h1>
 
 
 
@@ -663,7 +1044,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../get-started/contributing/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Contributing">
+          <a href="../requests/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Requests">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -673,11 +1054,27 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Contributing
+                Requests
               </div>
             </div>
           </a>
         
+        
+          
+          <a href="../custom_request/" class="md-footer__link md-footer__link--next" aria-label="Next: Custom Request">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Custom Request
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
@@ -742,10 +1139,10 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.expand", "navigation.footer", "content.code.copy", "content.code.select", "search.highlight", "search.share", "search.suggest"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.expand", "navigation.footer", "content.code.copy", "content.code.select", "search.highlight", "search.share", "search.suggest"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.81fa17fe.min.js"></script>
+      <script src="../../assets/javascripts/bundle.81fa17fe.min.js"></script>
       
     
   </body>
