@@ -18,8 +18,6 @@ Floky is a MVC (Model-View-Controller) framework for developing web applications
 
 ## Why Floky ?
 
-Floky was designed to meet a fundamental need: to allow developers to quickly start a project without having to spend weeks understanding how many tools work. We understand that sometimes you just need a lightweight and efficient tool to bring your ideas to life without being overwhelmed by a multitude of unnecessary features.
-
 The idea behind Floky is not to **reinvent the wheel**, but to provide a set of well-designed, easy-to-use tools for smaller projects. We sought to simplify development by avoiding unnecessary complexity, while still providing flexibility to create quality web applications.
 Floky was designed to meet a fundamental need: to allow developers to quickly start a project without having to spend weeks understanding how many tools work. We understand that sometimes you just need a lightweight and efficient tool to bring your ideas to life without being overwhelmed by a multitude of unnecessary features.
 

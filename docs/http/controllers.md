@@ -4,7 +4,7 @@ Controllers are a fundamental part of the Floky MVC architecture. They handle in
 
 ## Creating Controllers
 
-Floky provides a convenient Artisan command for quickly creating controllers: php floky make:controller. This command generates a PHP controller file within the `app/Http/Controllers` directory.
+Floky provides a convenient command for quickly creating controllers. This command generates a PHP controller file within the `app/Http/Controllers` directory.
 
 Example:
 

@@ -23,7 +23,15 @@ Once you have Floky installed, you are ready to launch your application. Follow 
 
 1. **Environment Configuration**: Before launching your application, make sure you have correctly configured the environment. Make sure settings, such as database connection and other options specific to your project, are set correctly.
 
-2. **Database Migrations**: If your application uses a database, be sure to perform the necessary migrations to create the database tables and schemas. You can use specific commands provided by the framework to perform these migrations.
+2. **Database Migrations**: If your application uses a database, be sure to perform the necessary migrations to create the database tables and schemas. You can use specific commands provided by the framework to perform these migrations :
+
+    ```bash	title="Prepare all migrations"
+    php floky make:migrations
+    ```
+
+    ```bash	title="Run all migrations"
+    php floky run:migrations
+    ```
 
 3. **Creating Routes**: Configure your routes in the `src/routes/` directory. This is where you specify how URLs should be handled by your application. You can define controllers, actions and parameters for each route.
 
@@ -36,6 +44,10 @@ Once you have Floky installed, you are ready to launch your application. Follow 
     ```
     
 6. This command will launch the development server at http://localhost:8080, and you will be able to access your application from your browser.
+
+7. You will see this welcome page :
+
+![Floky Welcome Page](../_assets/images/floky-welcome-page.png)
 
 ### Use a Local Web Server
 
