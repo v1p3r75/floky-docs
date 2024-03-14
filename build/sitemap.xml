@@ -2,127 +2,127 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://floky-docs.vercel.app/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://floky-docs.vercel.app/cli/add-new-commands/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://floky-docs.vercel.app/cli/cli-commands/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://floky-docs.vercel.app/database/entities/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://floky-docs.vercel.app/database/migrations/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://floky-docs.vercel.app/database/models/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://floky-docs.vercel.app/database/seeders/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://floky-docs.vercel.app/get-started/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://floky-docs.vercel.app/get-started/configuration/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://floky-docs.vercel.app/get-started/your-first-app/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://floky-docs.vercel.app/http/controllers/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://floky-docs.vercel.app/http/custom_request/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://floky-docs.vercel.app/http/middleware/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://floky-docs.vercel.app/http/requests/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://floky-docs.vercel.app/http/resources/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://floky-docs.vercel.app/http/response/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://floky-docs.vercel.app/http/routing/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://floky-docs.vercel.app/http/views/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://floky-docs.vercel.app/others/collections/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://floky-docs.vercel.app/others/contributing/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://floky-docs.vercel.app/others/exceptions/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://floky-docs.vercel.app/others/facades/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://floky-docs.vercel.app/others/helpers/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://floky-docs.vercel.app/others/services/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://floky-docs.vercel.app/others/testing/</loc>
-         <lastmod>2024-03-13</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
