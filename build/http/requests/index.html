@@ -26,7 +26,7 @@
     
     
       
-        <title>Requests - Floky</title>
+        <title>Request - Floky</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#requests" class="md-skip">
+        <a href="#the-request-object" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Requests
+              Request
             
           </span>
         </div>
@@ -460,7 +460,7 @@
         
   
   <span class="md-ellipsis">
-    Controllers
+    Controller
   </span>
   
 
@@ -505,15 +505,80 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Request
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Requests
+    Request
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#request-injection" class="md-nav__link">
+    Request Injection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#request-methods" class="md-nav__link">
+    Request Methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-request-headers-in-floky" class="md-nav__link">
+    Accessing Request Headers in Floky
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-features" class="md-nav__link">
+    Additional Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -530,7 +595,7 @@
         
   
   <span class="md-ellipsis">
-    Views
+    View
   </span>
   
 
@@ -1006,6 +1071,49 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#request-injection" class="md-nav__link">
+    Request Injection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#request-methods" class="md-nav__link">
+    Request Methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-request-headers-in-floky" class="md-nav__link">
+    Accessing Request Headers in Floky
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-features" class="md-nav__link">
+    Additional Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1022,7 +1130,117 @@
   
 
 
-<h1 id="requests">Requests</h1>
+<h1 id="the-request-object">The Request Object</h1>
+<p>The <code>Request</code> object plays a crucial role in Floky applications, providing access to information about the incoming HTTP request. You can inject the <code>Request</code> object into controller methods to retrieve user input, headers, and other request data.  </p>
+<h2 id="request-injection">Request Injection</h2>
+<p>Floky controllers can receive the <code>Request</code> object as an argument in their methods. This allows you to access various request details within your controller logic.</p>
+<p>Here's an example:</p>
+<div class="language-php highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">PHP</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="cp">&lt;?php</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="k">namespace</span> <span class="nx">App\Http\Controllers</span><span class="p">;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="k">class</span> <span class="nc">WelcomeController</span> <span class="k">extends</span> <span class="nx">Controller</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="p">{</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a>    <span class="p">#[</span><span class="nd">Get</span><span class="p">(</span><span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;/welcome&#39;</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;welcome&#39;</span><span class="p">)]</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>    <span class="k">public</span> <span class="k">function</span> <span class="nf">index</span><span class="p">(</span><span class="nx">Request</span> <span class="nv">$request</span><span class="p">)</span> <span class="p">{</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a>        <span class="nv">$name</span> <span class="o">=</span> <span class="nv">$request</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">);</span> <span class="c1">// Accessing a GET parameter</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a>        <span class="nv">$message</span> <span class="o">=</span> <span class="nv">$request</span><span class="o">-&gt;</span><span class="na">all</span><span class="p">();</span>   <span class="c1">// Getting all request data</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a>        <span class="c1">// ...</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a>    <span class="p">}</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<h2 id="request-methods">Request Methods</h2>
+<p>The <code>Request</code> object provides several methods to access different aspects of the HTTP request:</p>
+<ul>
+<li><code>input(string $key, $default = null)</code>: Retrieves a specific value from the request body (either GET or POST data). If the key doesn't exist, it returns the default value.</li>
+<li><code>get(string $key = null, $default = null)</code>: Retrieves a value from the GET request data. If no key is provided, it returns the entire GET data array.</li>
+<li><code>post(string $key = null, $default = null)</code>: Retrieves a value from the POST request data. If no key is provided, it returns the entire POST data array.</li>
+<li><code>only(array $keys)</code>: Returns a subset of the request data containing only the specified keys.</li>
+<li><code>all()</code>: Returns an array containing all request data merged from GET, POST, and other sources.</li>
+<li><code>validator(array $rules, array $messages = [])</code>: Creates a validator instance using the BlakvGhost PHPValidator library to validate request data against defined rules. You can specify custom error messages as well.</li>
+<li><code>validate(array $rules, array $messages = [])</code>: Validates request data against defined rules and throws an exception if validation fails. Alternatively, consider using the <code>back</code> method for redirecting with errors.</li>
+<li><code>back(mixed $data = [])</code>: Redirects the user back to the previous page (using the <code>Referer</code> header) and stores the provided data in the session for displaying errors or other information.</li>
+<li><code>getUri()</code>: Returns the current request URI.</li>
+<li><code>getReferer()</code>: Returns the URL from which the user originated the request (based on the <code>Referer</code> header).</li>
+<li><code>getUrl()</code>: Alias for <code>getUri()</code>.</li>
+<li><code>getMethod()</code>: Returns the HTTP method used for the request (GET, POST, PUT, etc.).</li>
+<li><code>isMethod(string $method)</code>: Checks if the current request method matches the provided method.</li>
+<li><code>isGet()</code>, <code>isPost()</code>, <code>isPut()</code>, etc.: Convenient methods to check if the current request uses the specific HTTP method.</li>
+<li><code>header()</code>: Returns a <code>Header</code> object that provides access to request headers.</li>
+</ul>
+<h2 id="accessing-request-headers-in-floky">Accessing Request Headers in Floky</h2>
+<p>The <code>Header</code> class within Floky's <code>Request</code> component provides functionalities to access and manipulate HTTP headers sent by the client in the request : </p>
+<ul>
+<li><code>get(string $headerName)</code>: Retrieves the value of a specific header by name. The header name is converted to uppercase and underscores are replaced with hyphens for compatibility with the server variable format (e.g., <code>Content-Type</code> becomes <code>HTTP_CONTENT_TYPE</code>). This method returns the sanitized value of the header or <code>null</code> if it doesn't exist.</li>
+<li><code>getAll()</code>: Returns an associative array containing all request headers. The header names are converted to a more readable format (e.g., <code>Content-Type</code> becomes <code>contentType</code>). The values are also sanitized before being returned.</li>
+</ul>
+<p><strong>Common Header Checks:</strong></p>
+<ul>
+<li><code>acceptJson()</code>: Checks if the request accepts JSON content type (<code>application/json</code>) by examining the <code>Accept</code> header.</li>
+<li><code>isAjax()</code>: Determines if the request is an AJAX request by checking the presence and value of the <code>X-Requested-With</code> header (<code>XMLHttpRequest</code>).</li>
+</ul>
+<p><strong>Setting Headers:</strong></p>
+<ul>
+<li><code>set(string $headerName, string $headerValue)</code>: Sets a new HTTP header in the response. This method allows you to define custom headers to be sent back to the client.</li>
+</ul>
+<p><strong>Additional Information:</strong></p>
+<ul>
+<li><code>isSecure()</code>: Checks if the current request is using a secure HTTPS connection.</li>
+<li><code>getUserAgent()</code>: Returns the user agent string sent by the client's browser.</li>
+<li><code>getReferer()</code>: Retrieves the referring URL from the <code>Referer</code> header if present.</li>
+<li><code>getClientIp()</code>: Returns the client's IP address based on the <code>REMOTE_ADDR</code> server variable.</li>
+<li><code>getBearer()</code>: Extracts the bearer token from the <code>Authorization</code> header if the request uses Bearer token authentication. It checks for a prefix of <code>"Bearer "</code> and returns the remaining string as the token.</li>
+</ul>
+<h2 id="additional-features">Additional Features</h2>
+<p><strong>File Uploads</strong></p>
+<p>The <code>Files</code> trait within Floky's <code>Request</code> component provides functionalities to handle file uploads submitted through forms. It's important to note that this trait is used within the <code>Request</code> object, not as a standalone class.</p>
+<p><strong>Checking for Uploaded Files:</strong></p>
+<ul>
+<li><code>hasFile(string $inputName)</code>: This method checks if a specific file input named <code>$inputName</code> exists in the uploaded files array (<code>$_FILES</code>). It returns <code>true</code> if the file was uploaded and <code>false</code> otherwise.</li>
+</ul>
+<p><strong>Accessing Uploaded File Details:</strong></p>
+<ul>
+<li><code>getFile(string $inputName)</code>: If a file with the given <code>$inputName</code> was uploaded, this method retrieves the corresponding information from the <code>$_FILES</code> array. It returns an associative array containing details about the uploaded file, such as:<ul>
+<li><code>name</code>: The original filename of the uploaded file.</li>
+<li><code>type</code>: The MIME type of the uploaded file.</li>
+<li><code>tmp_name</code>: The temporary filename of the uploaded file on the server.</li>
+<li><code>error</code>: An error code indicating any issues during the upload process (refer to PHP documentation for specific error codes).</li>
+<li><code>size</code>: The size of the uploaded file in bytes.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Moving Uploaded Files:</strong></p>
+<ul>
+<li><code>moveUploadedFile(string $inputName, string $destination)</code>: This method attempts to move the uploaded file identified by <code>$inputName</code> to a specified <code>$destination</code> path. It performs the following actions:<ul>
+<li>Checks if a file with the provided <code>$inputName</code> exists using <code>hasFile</code>.</li>
+<li>Verifies if the upload was successful by checking the <code>error</code> code in the file information (should be <code>UPLOAD_ERR_OK</code>).</li>
+<li>Appends the original filename to the provided <code>$destination</code> path to avoid naming conflicts.</li>
+<li>Uses the <code>move_uploaded_file</code> PHP function to move the temporary file to the specified destination.</li>
+<li>If the move operation is successful, it returns the complete destination path where the file is now stored.</li>
+<li>If any errors occur during the process, it returns <code>null</code>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>The <code>Request</code> object is an essential tool for handling user interactions within your Floky applications. By leveraging its methods, you can effectively retrieve request data, validate user input, and implement various request-related functionalities.</p>
 
 
 
@@ -1061,13 +1279,13 @@
         
         
           
-          <a href="../views/" class="md-footer__link md-footer__link--next" aria-label="Next: Views">
+          <a href="../views/" class="md-footer__link md-footer__link--next" aria-label="Next: View">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Views
+                View
               </div>
             </div>
             <div class="md-footer__button md-icon">

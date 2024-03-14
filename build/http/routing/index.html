@@ -460,7 +460,7 @@
         
   
   <span class="md-ellipsis">
-    Controllers
+    Controller
   </span>
   
 
@@ -485,6 +485,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Routing
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -494,6 +505,67 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#routing-in-floky" class="md-nav__link">
+    Routing in Floky
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-routing-attributes" class="md-nav__link">
+    Using Routing Attributes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#declaring-routes-in-route-files" class="md-nav__link">
+    Declaring Routes in Route Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benefits-of-routing-attributes" class="md-nav__link">
+    Benefits of Routing Attributes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-route-files" class="md-nav__link">
+    Using Route Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -510,7 +582,7 @@
         
   
   <span class="md-ellipsis">
-    Requests
+    Request
   </span>
   
 
@@ -530,7 +602,7 @@
         
   
   <span class="md-ellipsis">
-    Views
+    View
   </span>
   
 
@@ -1006,6 +1078,56 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#routing-in-floky" class="md-nav__link">
+    Routing in Floky
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-routing-attributes" class="md-nav__link">
+    Using Routing Attributes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#declaring-routes-in-route-files" class="md-nav__link">
+    Declaring Routes in Route Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benefits-of-routing-attributes" class="md-nav__link">
+    Benefits of Routing Attributes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-route-files" class="md-nav__link">
+    Using Route Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1023,6 +1145,84 @@
 
 
 <h1 id="routing">Routing</h1>
+<h2 id="routing-in-floky">Routing in Floky</h2>
+<p>Routing plays a crucial role in any web application, defining how URLs map to specific controller actions. Floky offers a flexible and intuitive routing system that allows you to define routes in two ways.</p>
+<h2 id="using-routing-attributes">Using Routing Attributes</h2>
+<p>You can decorate controller methods with routing attributes to define routes and their corresponding HTTP methods. Floky provides the following routing attributes:</p>
+<ul>
+<li><code>#[Get(url: '/path', name: 'routeName', middlewares: [])]</code></li>
+<li><code>#[Post(url: '/path', name: 'routeName', middlewares: [])]</code></li>
+<li><code>#[Put(url: '/path', name: 'routeName', middlewares: [])]</code></li>
+<li><code>#[Patch(url: '/path', name: 'routeName', middlewares: [])]</code></li>
+<li><code>#[Delete(url: '/path', name: 'routeName', middlewares: [])]</code></li>
+<li><code>#[MatchWith(['GET', 'POST'], url: '/path', name: 'routeName', middlewares: [])]</code></li>
+</ul>
+<p><strong>Example :</strong></p>
+<div class="language-php highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">PHP</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="cp">&lt;?php</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="k">namespace</span> <span class="nx">App\Http\Controllers</span><span class="p">;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="k">use</span> <span class="nx">Floky\Http\Requests\Request</span><span class="p">;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="k">use</span> <span class="nx">Floky\Routing\Attributes\Get</span><span class="p">;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="k">class</span> <span class="nc">WelcomeController</span> <span class="k">extends</span> <span class="nx">Controller</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="p">{</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a>    <span class="p">#[</span><span class="nd">Get</span><span class="p">(</span><span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;/welcome&#39;</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;welcome&#39;</span><span class="p">)]</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a>    <span class="k">public</span> <span class="k">function</span> <span class="nf">index</span><span class="p">(</span><span class="nx">Request</span> <span class="nv">$request</span><span class="p">)</span> <span class="p">{</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a>        <span class="k">return</span> <span class="nx">view</span><span class="p">(</span><span class="s1">&#39;welcome&#39;</span><span class="p">);</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a>    <span class="p">}</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<p>In this example, the <code>WelcomeController</code> has an <code>index</code> method decorated with the <code>#[Get]</code> attribute. This method handles GET requests to the <code>/welcome</code> URL. The <code>middlewares</code> option specifies that the <code>first</code> middleware should be executed before the controller method.</p>
+<h2 id="declaring-routes-in-route-files">Declaring Routes in Route Files</h2>
+<p>You can also define routes in the <code>web.php</code> and <code>api.php</code> files located in the <code>routes</code> directory. These files use the Laravel Route facade to define routes.</p>
+<p><strong>Example:</strong></p>
+<div class="language-php highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">PHP</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="cp">&lt;?php</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="nx">Route</span><span class="o">::</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="k">function</span> <span class="p">(</span><span class="nx">Request</span> <span class="nv">$request</span><span class="p">)</span> <span class="p">{</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a>    <span class="k">return</span> <span class="nx">view</span><span class="p">(</span><span class="s1">&#39;welcome&#39;</span><span class="p">);</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="p">});</span>
+</span></code></pre></div></td></tr></table></div>
+<p>This route defines a GET route to the <code>/</code> URL that renders the <code>welcome</code> view. The <code>middleware</code> method is used to assign the <code>first</code> middleware to this route.</p>
+<h2 id="benefits-of-routing-attributes">Benefits of Routing Attributes</h2>
+<ul>
+<li><strong>Improved readability:</strong> Decorating controller methods with attributes makes your code more readable and easier to understand.</li>
+<li><strong>Reduced boilerplate:</strong> You can avoid defining routes in separate files, reducing boilerplate code.</li>
+<li><strong>Closer association:</strong> Routing logic is closely associated with the controller methods it handles.</li>
+</ul>
+<h2 id="using-route-files">Using Route Files</h2>
+<p>While routing attributes offer a concise and modern approach, defining routes in separate files can be beneficial in certain situations:</p>
+<ul>
+<li><strong>Large applications:</strong> For large applications with many routes, organizing routes in separate files can improve readability and maintainability.</li>
+<li><strong>Separation of concerns:</strong> It allows you to separate routing logic from controller logic, promoting cleaner code organization.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>Floky's routing system provides flexibility and convenience. You can choose the approach that best suits your application's needs and preferences. Consider using routing attributes for smaller applications and simpler routing logic, while larger applications may benefit from defining routes in separate files.</p>
 
 
 
@@ -1044,7 +1244,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../controllers/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Controllers">
+          <a href="../controllers/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Controller">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1054,20 +1254,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Controllers
+                Controller
               </div>
             </div>
           </a>
         
         
           
-          <a href="../requests/" class="md-footer__link md-footer__link--next" aria-label="Next: Requests">
+          <a href="../requests/" class="md-footer__link md-footer__link--next" aria-label="Next: Request">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Requests
+                Request
               </div>
             </div>
             <div class="md-footer__button md-icon">

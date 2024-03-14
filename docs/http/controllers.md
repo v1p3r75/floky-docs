@@ -1,4 +1,4 @@
-# Controllers
+# Controller
 
 Controllers are a fundamental part of the Floky MVC architecture. They handle incoming HTTP requests, interact with models to retrieve or manipulate data, and prepare the data for presentation in views. Controllers provide a layer of abstraction between the routes and the underlying application logic.
 
@@ -20,7 +20,6 @@ This command will create a WelcomeController.php file inside the `app/Http/Contr
 
 namespace App\Http\Controllers;
 
-use Floky\Http\Controllers\Controller;
 
 class WelcomeController extends Controller
 {
@@ -46,14 +45,13 @@ A typical Floky controller consists of the following elements:
 
 namespace App\Http\Controllers;
 
-use Floky\Http\Controllers\Controller;
 use Floky\Http\Requests\Request;
 use Floky\Routing\Attributes\Get;
 
 class WelcomeController extends Controller
 {
 
-    #[Get(url: '/welcome', name: 'welcome', middlewares: ['first'])]
+    #[Get(url: '/welcome', name: 'welcome')]
     public function index(Request $request) {
 
         // Simulate some data fetching

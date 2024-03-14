@@ -18,10 +18,10 @@ nav:
     - Your First  App : get-started/your-first-app.md
 
   - Http:
-    - Controllers: http/controllers.md
+    - Controller: http/controllers.md
     - Routing: http/routing.md
-    - Requests: http/requests.md
-    - Views: http/views.md
+    - Request: http/requests.md
+    - View: http/views.md
     - Custom Request: http/custom_request.md
     - Response: http/response.md
     - Middleware: http/middleware.md
